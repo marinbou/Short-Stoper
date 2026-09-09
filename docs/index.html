@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Stoper — Free Your Mind</title>
+    <meta name="description" content="Short Stoper bloque automatiquement les Shorts, Reels et Spotlight pour reprendre le contrôle de ton temps.">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <style>
+        :root {
+            --bg: #14121F;
+            --surface: #1E1B2E;
+            --stroke: #2C2840;
+            --violet: #8B5CF6;
+            --cyan: #22D3EE;
+            --success: #34D399;
+            --text: #FFFFFF;
+            --text-2: #B8B4C9;
+            --text-3: #7A7690;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 72px 0 48px;
+            background:
+                radial-gradient(900px 420px at 50% -10%, rgba(139,92,246,0.22), transparent 70%),
+                var(--bg);
+        }
+        .logo {
+            width: 112px; height: 112px;
+            border-radius: 26px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.5), 0 0 0 1px var(--stroke);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, var(--violet), var(--cyan));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        h1 {
+            font-size: clamp(2.6rem, 7vw, 4rem);
+            letter-spacing: -1.5px;
+            margin: 22px 0 8px;
+        }
+        .tagline {
+            font-size: 1.15rem;
+            color: var(--text-2);
+            max-width: 540px;
+            margin: 0 auto 36px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(90deg, var(--violet), var(--cyan));
+            color: #fff;
+            padding: 16px 36px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(139,92,246,0.45);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+        }
+        .download-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(34,211,238,0.45); filter: brightness(1.06); }
+        .alt-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: var(--text-3);
+            font-size: 0.9rem;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        .alt-link:hover { color: var(--cyan); border-color: var(--cyan); }
+        .platforms {
+            margin-top: 18px;
+            color: var(--text-3);
+            font-size: 0.9rem;
+        }
+
+        /* Sections */
+        section { padding: 56px 0; }
+        .section-title {
+            font-size: 1.7rem;
+            letter-spacing: -0.5px;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        .steps { display: grid; gap: 16px; grid-template-columns: 1fr; }
+        @media (min-width: 640px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+        .step, .card {
+            background: var(--surface);
+            border: 1px solid var(--stroke);
+            border-radius: 16px;
+            padding: 22px;
+        }
+        .step .num {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 30px; height: 30px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--violet), var(--cyan));
+            font-weight: 700; font-size: 0.95rem; margin-bottom: 12px;
+        }
+        .step h3, .card h3 { margin-bottom: 8px; font-size: 1.05rem; }
+        .step p, .card p { color: var(--text-2); font-size: 0.95rem; }
+
+        .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+        @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+        .card h3 .emoji { margin-right: 6px; }
+        .card strong { color: var(--text); }
+
+        .install { background: var(--surface); border: 1px solid var(--stroke); border-radius: 20px; padding: 30px; }
+        .install ol { padding-left: 22px; color: var(--text-2); }
+        .install li { margin-bottom: 12px; }
+        .install li::marker { color: var(--cyan); font-weight: 700; }
+        .install code {
+            background: #14121F; border: 1px solid var(--stroke);
+            border-radius: 6px; padding: 2px 7px; font-size: 0.88rem; color: var(--cyan);
+        }
+
+        footer {
+            border-top: 1px solid var(--stroke);
+            padding: 36px 0 48px;
+            text-align: center;
+            color: var(--text-3);
+            font-size: 0.9rem;
+        }
+        footer a { color: var(--cyan); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="wrap">
+            <img src="logo.svg" alt="Logo Short Stoper" class="logo">
+            <h1><span class="gradient-text">Free Your Mind</span></h1>
+            <p class="tagline">
+                Reprends le contrôle sur les shorts, reels et spotlight qui te volent ton temps —
+                automatiquement, sans effort.
+            </p>
+            <a class="download-btn" href="https://github.com/Marinnnnnnnnn/Short-Stoper-V2/releases/latest/download/Short-Stoper.apk">
+                ⬇️ Télécharger l'APK
+            </a>
+            <br>
+            <a class="alt-link" href="https://github.com/Marinnnnnnnnn/Short-Stoper-V2/releases/latest">
+                Voir la dernière version sur GitHub
+            </a>
+            <p class="platforms">Compatible Android 7.0 et + (min API 24) — YouTube · Instagram · Snapchat</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrap">
+            <h2 class="section-title">Comment ça marche</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="num">1</span>
+                    <h3>Installe l'app</h3>
+                    <p>Télécharge l'APK et installe-le. C'est gratuit, open source et sans aucune publicité.</p>
+                </div>
+                <div class="step">
+                    <span class="num">2</span>
+                    <h3>Active l'accessibilité</h3>
+                    <p>L'app te guide vers les réglages Android. Une seule autorisation à activer, rien d'autre.</p>
+                </div>
+                <div class="step">
+                    <span class="num">3</span>
+                    <h3>Tu es protégé</h3>
+                    <p>Ouvre Shorts, Reels ou Spotlight : l'app te renvoie immédiatement vers le contenu normal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <h2 class="section-title">Pourquoi Short Stoper</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><span class="emoji">⚡</span>Blocage instantané</h3>
+                    <p>Dès qu'un écran de contenu vertical est détecté, l'app déclenche le retour en arrière automatiquement. Tu ne restes jamais plus d'une seconde dans la boucle.</p>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji">🔒</span>100% local et privé</h3>
+                    <p><strong>Aucune connexion internet.</strong> L'analyse de l'écran se fait entièrement sur ton téléphone. Rien n'est collecté, rien n'est envoyé nulle part.</p>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji">🧩</span>Extensible</h3>
+                    <p>YouTube, Instagram et Snapchat sont gérés par des détecteurs isolés. Un nouveau réseau peut être ajouté sans toucher au reste de l'app.</p>
+                </div>
+                <div class="card">
+                    <h3><span class="emoji">🌱</span>Léger et économe</h3>
+                    <p>Pas de bibliothèque lourde, pas de compte à créer. L'app tourne discrètement en arrière-plan avec une consommation minimale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <h2 class="section-title">Guide d'installation</h2>
+            <div class="install">
+                <ol>
+                    <li>Télécharge le fichier <strong>Short-Stoper.apk</strong> via le bouton ci-dessus.</li>
+                    <li>Ouvre le fichier et autorise l'installation depuis une source inconnue si Android te le demande.</li>
+                    <li>Lance l'app et appuie sur <strong>« Activer l'accessibilité »</strong>, puis active <strong>Short Stoper</strong> dans la liste.</li>
+                    <li>Accepte la permission de notification (elle garde le service actif en arrière-plan).</li>
+                    <li>Sur certains téléphones (Xiaomi, Huawei…), mets la batterie sur <code>Aucune restriction</code> et active le <code>démarrage automatique</code> pour que le blocage ne s'arrête jamais.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <p>Open source &amp; gratuit — créé pour lutter contre le doomscrolling.</p>
+            <p><a href="https://github.com/Marinnnnnnnnn/Short-Stoper-V2">Voir le code source sur GitHub</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

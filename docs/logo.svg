@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="144" height="144">
+  <defs>
+    <linearGradient id="brainGrad" gradientUnits="userSpaceOnUse" x1="24" y1="22" x2="84" y2="82">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="fluidGrad" gradientUnits="userSpaceOnUse" x1="73" y1="46" x2="98" y2="32">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <path d="M28,4 L80,4 C93,4 104,15 104,28 L104,80 C104,93 93,104 80,104 L28,104 C15,104 4,93 4,80 L4,28 C4,15 15,4 28,4 Z" fill="#1E1B2E"/>
+  <path d="M50,22 C40,20 30,24 26,33 C22,42 22,53 27,61 C30,66 35,70 41,71 C41,78 46,83 54,83 C62,83 67,78 67,71 C73,70 78,66 81,61 C86,53 86,42 82,33 C78,24 68,20 58,22" fill="none" stroke="url(#brainGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M54,26 C52,33 56,39 54,46 C52,53 56,59 54,66 C53,71 54,75 54,78" fill="none" stroke="url(#brainGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M31,36 C34,33 38,34 40,37 M29,46 C32,43 36,44 38,47 M29,56 C32,53 36,54 38,57" fill="none" stroke="url(#brainGrad)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M77,36 C74,33 70,34 68,37 M79,46 C76,43 72,44 70,47 M79,56 C76,53 72,54 70,57" fill="none" stroke="url(#brainGrad)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M73,43 L77,40 L79,41" fill="none" stroke="#1E1B2E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M73,46 C71,44 72,41 75,40 C84,36 92,34 98,32 C99,36 95,40 88,43 C82,45 76,48 73,46 Z" fill="url(#fluidGrad)"/>
+  <circle cx="92.2" cy="25.8" r="2.2" fill="#22D3EE"/>
+  <circle cx="96.8" cy="19.4" r="1.6" fill="#8B5CF6"/>
+</svg>
