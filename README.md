@@ -1,7 +1,6 @@
 
 <!-- Remplace l'URL ci-dessous par le lien de ton logo -->
-  <img src="![Uploading LOGO SHORT STOPER.png…]()
-0">
+ <img width="81" height="80" alt="LOGO SHORT STOPER" src="https://github.com/user-attachments/assets/ed401f49-8e15-4e22-921f-467d3316eac3" />
 
   Short-Stoper 🛑</h1>
 
