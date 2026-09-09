@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Short Stoper</string>
+    <string name="accessibility_service_description">Repère les contenus courts (YouTube Shorts, Instagram Reels, Snapchat Spotlight) et les ferme automatiquement pour réduire le scroll compulsif. Fonctionne entièrement hors ligne et ne collecte aucune donnée.</string>
+
+    <string name="title_free_your_mind">Free Your Mind</string>
+    <string name="subtitle_free_your_mind">Reprends le contrôle sur les shorts, reels et spotlight qui te volent ton temps — automatiquement, sans effort.</string>
+
+    <string name="section_permission_title">Pourquoi nous avons besoin de permission ?</string>
+    <string name="section_permission_body">Pour repérer et fermer automatiquement les contenus courts, l’app doit lire ce qui s’affiche à l’écran — c’est le rôle du service d’Accessibilité d’Android.\n\nAndroid va afficher un message qui semble alarmant (« cette app peut voir le contenu de l’écran… »). C’est normal et attendu : c’est le message standard pour ce type de permission, utilisé par toutes les apps de blocage et aussi par les lecteurs d’écran pour malvoyants.\n\nCe qui compte vraiment : aucune donnée ne quitte ton téléphone. L’app n’a pas accès à internet, ne collecte rien, n’envoie rien nulle part. Tout se passe en local, rien que pour fermer les Reels.</string>
+    <string name="btn_enable_accessibility">Activer l’accessibilité →</string>
+
+    <string name="section_battery_title">Une dernière étape</string>
+    <string name="section_battery_body">Certains téléphones (Huawei en particulier) coupent agressivement les apps en arrière-plan pour économiser la batterie — y compris celle-ci, ce qui l’empêcherait de fonctionner sans que tu t’en rendes compte.\n\nCette autorisation ne sert pas à consommer plus de batterie — au contraire, elle permet à l’app de rester discrètement active en tâche de fond, avec une consommation minime, pour continuer à te protéger.</string>
+    <string name="btn_battery">Autoriser l’arrière-plan (batterie)</string>
+
+    <string name="section_services_title">Services détectés</string>
+    <string name="service_youtube">YouTube Shorts</string>
+    <string name="service_instagram">Instagram Reels</string>
+    <string name="service_snapchat">Snapchat Spotlight</string>
+    <string name="toggle_label">Protection</string>
+
+    <string name="status_protected">Tu es protégé. Ouvre Shorts, Reels ou Spotlight pour voir la magie.</string>
+    <string name="status_not_protected">Active le service d’accessibilité pour être protégé.</string>
+
+    <string name="logo_content_description">Logo Short Stoper</string>
+    <string name="check_content_description">Protégé</string>
+    <string name="badge_youtube">YouTube</string>
+    <string name="badge_instagram">Instagram</string>
+    <string name="badge_snapchat">Snapchat</string>
+
+    <string name="notification_channel_name">Protection active</string>
+    <string name="notification_title">Short Stoper actif</string>
+    <string name="notification_text">Les Shorts, Reels et Spotlight sont bloqués automatiquement.</string>
+    <string name="fgs_subtype">Service d’accessibilité qui ferme automatiquement les contenus courts</string>
+</resources>
