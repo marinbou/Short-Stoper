@@ -1,4 +1,9 @@
-<h1 align="center">Short-Stoper 🛑</h1>
+
+<!-- Remplace l'URL ci-dessous par le lien de ton logo -->
+  <img src="![Uploading LOGO SHORT STOPER.png…]()
+0">
+
+  Short-Stoper 🛑</h1>
 
 <p align="center">
   <strong>L'application Android qui stoppe le doomscrolling avant qu'il ne commence.</strong>
@@ -20,6 +25,6 @@ Comme l'application n'est pas sur le Play Store et utilise un service d'accessib
 
 1. Téléchargez et installez l'APK depuis le lien ci-dessus.
 2. Allez dans les **Paramètres** de votre téléphone > **Applications** > **Short-Stoper**.
-3. Appuyez sur les 3 petits points (en haut à droite) et choisissez **"Autoriser les paramètres restreints"**.
-4. Ouvrez l'application Short-Stoper et cliquez sur le bouton pour activer le service d'accessibilité.
-5. 
+3. **Débloquer la sécurité :** Appuyez sur les 3 petits points (en haut à droite) et choisissez **"Autoriser les paramètres restreints"** .
+4. **Activer l'application :** Ouvrez Short-Stoper et cliquez sur le bouton pour activer le service d'accessibilité.
+5. 🔋 **Désactiver l'optimisation de batterie (Crucial) :** Pour éviter que le système ne ferme l'application lorsqu'elle est en arrière-plan, allez dans les paramètres de batterie de l'application (Paramètres > Applications > Short-Stoper > Batterie) et sélectionnez **"Non restreint"** ou **"Gérer manuellement"**. Sans cela, le bloqueur finira par s'arrêter.
